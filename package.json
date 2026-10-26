@@ -1,6 +1,6 @@
 {
   "name": "dsh-sync",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "把 DSH 的记忆/会话同步到网盘（或任意目录）：一轮对话结束后自动推送，安全的时候才动文件；设置页里有「数据同步」面板。",
   "type": "module",
   "main": "lib/index.js",
