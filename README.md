@@ -1,5 +1,9 @@
 # dsh-sync
 
+[![Node](https://img.shields.io/badge/node-%E2%89%A520-blue)](https://nodejs.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![tests](https://img.shields.io/badge/tests-71%20passing-brightgreen)](./test)
+
 给 [DeepSeek Harness](https://github.com/deepseek-ai) 用的**数据同步插件**：把记忆、会话、心情同步到网盘（或任意目录）。
 
 **核心：插件知道什么时候写完。** 一轮对话结束 → 等几秒 → 确认文件安静了才搬。
