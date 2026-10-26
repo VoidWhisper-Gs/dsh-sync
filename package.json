@@ -1,0 +1,38 @@
+{
+  "name": "dsh-sync",
+  "version": "0.2.0",
+  "description": "把 DSH 的记忆/会话同步到网盘（或任意目录）：一轮对话结束后自动推送，安全的时候才动文件；设置页里有「数据同步」面板。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/readwrite.test.mjs && node test/guard.test.mjs && node test/panel.test.mjs && node test/client.test.mjs && node test/config.test.mjs && node test/unconfigured.test.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ],
+      "external": [
+        "react"
+      ]
+    }
+  }
+}

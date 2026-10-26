@@ -1,0 +1,4 @@
+# dsh-sync bundle patch layer.
+- insert:
+    - id: dsh-sync
+      name: dsh-sync
